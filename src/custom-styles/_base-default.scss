@@ -7,7 +7,8 @@
 }
 
 html, body {
-    font-family: var(--primary-font);
+    @include primary-font-family;
+    font-size: 1.8rem;
 }
 
 h1 {
