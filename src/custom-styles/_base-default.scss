@@ -1,0 +1,68 @@
+@mixin primary-font-family {
+    font-family: var(--primary-font);
+}
+
+@mixin secondary-font-family {
+    font-family: var(--secondary-font);
+}
+
+html, body {
+    font-family: var(--primary-font);
+}
+
+h1 {
+    @include primary-font-family;
+    font-size: 15rem;
+    line-height: 17.2rem;
+}
+
+h2 {
+    @include primary-font-family;
+    font-size: 10rem;
+    line-height: 11.5rem;
+}
+
+h3 {
+    @include primary-font-family;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+}
+
+h4 {
+    @include primary-font-family;
+    font-size: 3.2rem;
+    line-height: 3.7rem;
+}
+
+h5 {
+    @include secondary-font-family;
+    font-size: 2.8rem;
+    letter-spacing: 0.4725rem;
+    line-height: 3.4rem;
+}
+
+p {
+    @include secondary-font-family;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.sub-heading-1 {
+    @include primary-font-family;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+}
+
+.sub-heading-2 {
+    @include secondary-font-family;
+    font-size: 1.4rem;
+    letter-spacing: 0.235rem;
+    line-height: 1.7rem;
+}
+
+.nav-text {
+    @include secondary-font-family;
+    font-size: 1.6rem;
+    letter-spacing: 0.27rem;
+    line-height: 1.9rem;
+}

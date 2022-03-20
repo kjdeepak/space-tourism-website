@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+$font-size-root: 10px;
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+    --default-primary-color: #0B0D17;
+    --default-secondary-color: #D0D6F9;
+    --default-tertiary-color: #FFFFFF;
+    --default-primary-font: 'Bellefair', serif;
+    --default-secondary-font: 'Barlow Condensed', sans-serif;
+}
+
+@import './custom-styles/index';
