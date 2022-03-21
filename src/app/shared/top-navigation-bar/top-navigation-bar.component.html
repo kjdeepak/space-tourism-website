@@ -1,5 +1,5 @@
-<nav class="top-navigation-bar navbar navbar-expand-md bg-transparent">
-    <a class="navbar-brand p-4" href="#"><img src="assets/shared/logo.svg" /></a>
+<nav class="top-navigation-bar navbar navbar-expand-sm bg-transparent">
+    <a class="navbar-brand p-4 ms-4 ms-sm-5" [routerLink]="['/']"><img src="assets/shared/logo.svg" /></a>
     <button class="navbar-toggler" type="button" (click)="toggleNavbarCollapsing()" aria-controls="navbarToggler"
         aria-expanded="false" aria-label="Toggle navigation">
         <img class="pe-3" src="assets/shared/icon-hamburger.svg" />
@@ -7,13 +7,13 @@
 
     <div [ngClass]="{'non-collapse-padding ps-5': !navbarCollapsed}" [class.collapse]="navbarCollapsed"
         class="navbar-collapse" id="navbarToggler">
-        <div class="d-md-none navbar-close-icon" (click)="toggleNavbarCollapsing()"><img
+        <div class="d-sm-none navbar-close-icon" (click)="toggleNavbarCollapsing()"><img
                 src="assets/shared/icon-close.svg" /></div>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">00</span> Home</li>
-            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">01</span> Destination</li>
-            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">02</span> Crew</li>
-            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">03</span> Technology</li>
+        <ul class="navbar-nav me-auto me-sm-0 mb-2 mb-sm-0 py-sm-5">
+            <li class="nav-item mb-5 mb-sm-0" [routerLink]="['/']" [routerLinkActive]="['active']"><span class="nav-item-prefix me-1">00</span> Home</li>
+            <li class="nav-item mb-5 mb-sm-0" [routerLink]="['/destination']" [routerLinkActive]="['active']"><span class="nav-item-prefix me-1">01</span> Destination</li>
+            <li class="nav-item mb-5 mb-sm-0" [routerLink]="['/crew']" [routerLinkActive]="['active']"><span class="nav-item-prefix me-1">02</span> Crew</li>
+            <li class="nav-item mb-5 mb-sm-0" [routerLink]="['/technology']" [routerLinkActive]="['active']"><span class="nav-item-prefix me-1">03</span> Technology</li>
         </ul>
     </div>
 </nav>

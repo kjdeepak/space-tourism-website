@@ -1,22 +1,21 @@
 @import "src/custom-styles/mixins";
 
 .top-navigation-bar {
+  &.navbar {
+    margin: 3rem 0;
+  }
   #navbarToggler {
     @include secondary-font-family;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(25px);
     margin-left: 25%;
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
       height: 100%;
       position: fixed;
       top: 0;
       left: 0;
       min-width: 100%;
       min-height: 100%;
-    }
-
-    @media (min-width: 576px) {
-      
     }
 
     &.non-collapse-padding {
@@ -30,15 +29,38 @@
 
     ul.navbar-nav {
       margin-top: 8rem;
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
+        width: 100%;
+        justify-content: space-evenly;
         margin-top: 0;
       }
-    }
 
-    li.nav-item {
-      font-size: 1.6rem;
-      letter-spacing: 0.27rem;
-      cursor: pointer;
+      li.nav-item {
+        position: relative;
+        font-size: 1.6rem;
+        letter-spacing: 0.27rem;
+        cursor: pointer;
+        &.active:after {
+          content: "";
+          display: block;
+          background-color: var(--tertiary-color);
+          opacity: 0.8;
+          width: 0.8rem;
+          height: 4rem;
+          position: absolute;
+          top: -1.5rem;
+          right: 20%;
+          bottom: initial;
+          @media (min-width: 576px) {
+            position: absolute;
+            top: initial;
+            right: initial;
+            bottom: -3rem;
+            width: 100%;
+            height: 0.5rem;
+          }
+        }
+      }
       span.nav-item-prefix {
         font-weight: 700;
       }
