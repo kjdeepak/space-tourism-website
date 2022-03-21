@@ -1,0 +1,7 @@
+@mixin primary-font-family {
+    font-family: var(--primary-font);
+}
+
+@mixin secondary-font-family {
+    font-family: var(--secondary-font);
+}

@@ -1,0 +1,19 @@
+<nav class="top-navigation-bar navbar navbar-expand-md bg-transparent">
+    <a class="navbar-brand p-4" href="#"><img src="assets/shared/logo.svg" /></a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbarCollapsing()" aria-controls="navbarToggler"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <img class="pe-3" src="assets/shared/icon-hamburger.svg" />
+    </button>
+
+    <div [ngClass]="{'non-collapse-padding ps-5': !navbarCollapsed}" [class.collapse]="navbarCollapsed"
+        class="navbar-collapse" id="navbarToggler">
+        <div class="d-md-none navbar-close-icon" (click)="toggleNavbarCollapsing()"><img
+                src="assets/shared/icon-close.svg" /></div>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">00</span> Home</li>
+            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">01</span> Destination</li>
+            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">02</span> Crew</li>
+            <li class="nav-item mb-5 mb-md-0"><span class="d-md-none nav-item-prefix me-3">03</span> Technology</li>
+        </ul>
+    </div>
+</nav>

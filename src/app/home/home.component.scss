@@ -1,16 +1,22 @@
 .home-background-image {
-    height: 100%;
-    background-image: url("../../assets/home/background-home-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-width: 768px) {
-        background-image: url("../../assets/home/background-home-tablet.jpg");
-    }
-    @media (min-width: 992px) {
-        background-image: url("../../assets/home/background-home-desktop.jpg");
-    }
+  height: 100%;
+  background-image: url("../../assets/home/background-home-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  @media (min-width: 768px) {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+  }
+  @media (min-width: 992px) {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+  }
 }
 
 * {
-    color:var(--bs-white);
+  color: var(--bs-white);
 }

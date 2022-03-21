@@ -1,0 +1,47 @@
+@import "src/custom-styles/mixins";
+
+.top-navigation-bar {
+  #navbarToggler {
+    @include secondary-font-family;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(25px);
+    margin-left: 25%;
+    @media (max-width: 576px) {
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    @media (min-width: 576px) {
+      
+    }
+
+    &.non-collapse-padding {
+      padding: 4rem;
+    }
+
+    .navbar-close-icon {
+      position: absolute;
+      right: 30%;
+    }
+
+    ul.navbar-nav {
+      margin-top: 8rem;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    li.nav-item {
+      font-size: 1.6rem;
+      letter-spacing: 0.27rem;
+      cursor: pointer;
+      span.nav-item-prefix {
+        font-weight: 700;
+      }
+    }
+  }
+}
