@@ -15,6 +15,26 @@
   @media (min-width: 992px) {
     background-image: url("../../assets/home/background-home-desktop.jpg");
   }
+
+  .text-content {
+    flex-basis:min-content;
+  }
+
+  .explore-container {
+    font-size: 3.2rem;
+    letter-spacing: 0.2rem;
+    line-height: 37px;
+    height: 274px;
+    width: 274px;
+    border-radius: 274px;
+
+    &:hover {
+      box-shadow: 0px 0px 0px 40px rgba(255, 255, 255, 0.1);
+      mix-blend-mode: normal;
+      background: var(--bs-white);
+      mix-blend-mode: normal;
+    }
+  }
 }
 
 * {
