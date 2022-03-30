@@ -33,12 +33,12 @@
     }
 
     &.non-collapse-padding {
-      padding: 4rem;
+      padding: 4rem 0 0 4rem;
     }
 
     .navbar-close-icon {
       position: absolute;
-      right: 30%;
+      right: 10%;
     }
 
     ul.navbar-nav {
@@ -63,7 +63,7 @@
           height: 4rem;
           position: absolute;
           top: -1.5rem;
-          right: 20%;
+          right: 0;
           bottom: initial;
           @media (min-width: 576px) {
             position: absolute;

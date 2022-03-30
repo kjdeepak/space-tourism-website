@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'space-tourism-angular';
+  backgroundImageLink!: string;
+
+  setBackgroundImage(imageLink: string): void {
+    this.backgroundImageLink = imageLink;
+  }
 }

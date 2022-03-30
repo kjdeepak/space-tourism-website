@@ -1,1 +1,4 @@
-<router-outlet></router-outlet>
+<div class="site-background-image" [ngStyle]="{'background-image': 'url('+backgroundImageLink+')'}">
+    <app-top-navigation-bar (backgroundImageLink)="setBackgroundImage($event)"></app-top-navigation-bar>
+    <router-outlet></router-outlet>
+</div>
