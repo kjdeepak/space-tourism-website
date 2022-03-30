@@ -4,11 +4,21 @@
   &.navbar {
     margin: 3rem 0;
   }
+
+  hr {
+    color: var(--tertiary-color);
+    width: 35%;
+    opacity: 0.25;
+    height: 0.1rem;
+    margin-left: 2rem;
+    margin-right: -2.5rem;
+    z-index: 10;
+  }
+
   #navbarToggler {
     @include secondary-font-family;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(25px);
-    margin-left: 25%;
     @media (max-width: 575px) {
       height: 100%;
       position: fixed;
@@ -16,6 +26,10 @@
       left: 0;
       min-width: 100%;
       min-height: 100%;
+    }
+    
+    @media (min-width: 576px) and (max-width: 992px) {
+      margin-left: 25%;
     }
 
     &.non-collapse-padding {
